@@ -6,48 +6,36 @@ interface Props {
 const { class: className } = Astro.props;
 ---
 
-<span class:list={["logo", className]}>
-  quami
-  <svg class="logo-bolt" viewBox="0 0 100 12" preserveAspectRatio="none">
-    <path d="M0,6 L20,6 L35,2 L50,6 L65,2 L80,6 L100,6" />
-  </svg>
-</span>
+<svg class:list={["logo", className]} viewBox="0 0 70 28" fill="none">
+  <text x="0" y="18" class="logo-text">quami</text>
+  <path class="logo-bolt" d="M0,24 L18,24 L26,21 L35,24 L44,21 L52,24 L70,24" />
+</svg>
 
 <style>
   .logo {
-    font-size: 1.125rem;
+    height: 24px;
+    width: auto;
+  }
+
+  .logo-text {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 20px;
     font-weight: 800;
-    color: currentColor;
     letter-spacing: -0.04em;
-    position: relative;
-    display: inline-block;
+    fill: currentColor;
   }
 
   .logo-bolt {
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 100%;
-    max-width: 100%;
-    height: 6px;
-  }
-
-  .logo-bolt path {
-    fill: none;
     stroke: var(--yellow);
     stroke-width: 2.5;
     stroke-linecap: round;
     stroke-linejoin: round;
+    fill: none;
   }
 
   @media (min-width: 640px) {
     .logo {
-      font-size: 1.25rem;
-    }
-
-    .logo-bolt {
-      height: 8px;
-      bottom: -4px;
+      height: 28px;
     }
   }
 </style>
