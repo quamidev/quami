@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40">
+  <!-- Text "quami" -->
+  <text x="60" y="26"
+        font-family="system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+        font-size="26"
+        font-weight="900"
+        text-anchor="middle"
+        fill="#1a1a1a"
+        letter-spacing="-1.2">quami</text>
+
+  <!-- Yellow zigzag bolt with two rounded peaks -->
+  <path d="M12,35 L35,35 Q42,35 46,31 Q50,27 54,31 Q58,35 62,35 Q66,35 70,31 Q74,27 78,31 Q82,35 88,35 L108,35"
+        fill="none"
+        stroke="#F5D547"
+        stroke-width="3.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
