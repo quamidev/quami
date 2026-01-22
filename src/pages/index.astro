@@ -12,6 +12,7 @@ import Logo from '../components/Logo.astro';
       </a>
       <ul class="nav-links">
         <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#enfoque">Enfoque</a></li>
         <li><a href="#proceso">Proceso</a></li>
         <li><a href="#contacto">Contacto</a></li>
@@ -22,10 +23,60 @@ import Logo from '../components/Logo.astro';
 
   <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-decoration">
-      <div class="floating-shape"></div>
-      <div class="floating-shape"></div>
-      <div class="floating-shape"></div>
+    <!-- Device mockup decoration -->
+    <div class="hero-graphics">
+      <svg viewBox="0 0 500 350" fill="none">
+        <!-- Laptop -->
+        <g>
+          <rect x="40" y="30" width="320" height="200" rx="8" fill="#27272A" />
+          <rect x="50" y="40" width="300" height="180" rx="4" fill="#FAFAFA" />
+          <rect x="60" y="50" width="70" height="160" fill="#F4F4F5" />
+          <rect x="70" y="60" width="50" height="8" rx="2" fill="#E4E4E7" />
+          <rect x="70" y="75" width="40" height="6" rx="2" fill="#E4E4E7" />
+          <rect x="70" y="90" width="45" height="6" rx="2" fill="#E4E4E7" />
+          <rect x="70" y="105" width="35" height="6" rx="2" fill="#E4E4E7" />
+          <rect x="70" y="120" width="42" height="6" rx="2" fill="#3B82F6" />
+          <rect x="70" y="135" width="38" height="6" rx="2" fill="#E4E4E7" />
+          <rect x="140" y="50" width="200" height="30" rx="4" fill="#F4F4F5" />
+          <rect x="150" y="58" width="80" height="6" rx="2" fill="#27272A" />
+          <rect x="290" y="55" width="40" height="14" rx="4" fill="#3B82F6" />
+          <rect x="140" y="90" width="95" height="60" rx="6" fill="#FAFAFA" stroke="#E4E4E7" stroke-width="1" />
+          <rect x="150" y="100" width="40" height="6" rx="2" fill="#27272A" />
+          <rect x="150" y="112" width="70" height="4" rx="1" fill="#A1A1AA" />
+          <rect x="150" y="120" width="55" height="4" rx="1" fill="#A1A1AA" />
+          <path d="M150,138 L160,132 L170,136 L180,128 L190,134" stroke="#FDE68A" stroke-width="2" fill="none" stroke-linecap="round" />
+          <rect x="245" y="90" width="95" height="60" rx="6" fill="#FAFAFA" stroke="#E4E4E7" stroke-width="1" />
+          <rect x="255" y="100" width="35" height="6" rx="2" fill="#27272A" />
+          <rect x="255" y="112" width="65" height="4" rx="1" fill="#A1A1AA" />
+          <rect x="255" y="120" width="50" height="4" rx="1" fill="#A1A1AA" />
+          <circle cx="295" cy="135" r="10" stroke="#3B82F6" stroke-width="2" fill="none" />
+          <rect x="140" y="160" width="200" height="50" rx="6" fill="#FAFAFA" stroke="#E4E4E7" stroke-width="1" />
+          <rect x="150" y="170" width="60" height="6" rx="2" fill="#27272A" />
+          <rect x="150" y="182" width="180" height="4" rx="1" fill="#A1A1AA" />
+          <rect x="150" y="192" width="140" height="4" rx="1" fill="#A1A1AA" />
+          <path d="M20,230 L40,230 L40,235 C40,238 43,240 46,240 L354,240 C357,240 360,238 360,235 L360,230 L380,230 L380,245 C380,250 375,255 370,255 L30,255 C25,255 20,250 20,245 Z" fill="#27272A" />
+          <ellipse cx="200" cy="237" rx="30" ry="3" fill="#1a1a1a" />
+        </g>
+        <!-- Phone -->
+        <g>
+          <rect x="360" y="100" width="100" height="200" rx="16" fill="#27272A" />
+          <rect x="368" y="115" width="84" height="170" rx="4" fill="#FAFAFA" />
+          <rect x="378" y="125" width="64" height="10" rx="3" fill="#3B82F6" />
+          <rect x="383" y="128" width="30" height="4" rx="1" fill="#FAFAFA" />
+          <rect x="378" y="145" width="64" height="35" rx="4" fill="#F4F4F5" />
+          <rect x="385" y="152" width="40" height="5" rx="1" fill="#27272A" />
+          <rect x="385" y="162" width="50" height="3" rx="1" fill="#A1A1AA" />
+          <rect x="385" y="170" width="35" height="3" rx="1" fill="#A1A1AA" />
+          <rect x="378" y="188" width="64" height="35" rx="4" fill="#F4F4F5" />
+          <rect x="385" y="195" width="35" height="5" rx="1" fill="#27272A" />
+          <rect x="385" y="205" width="50" height="3" rx="1" fill="#A1A1AA" />
+          <rect x="385" y="213" width="42" height="3" rx="1" fill="#A1A1AA" />
+          <rect x="378" y="231" width="64" height="35" rx="4" fill="#F4F4F5" />
+          <path d="M388,255 L398,248 L408,252 L418,244 L428,250" stroke="#FDE68A" stroke-width="2" fill="none" stroke-linecap="round" />
+          <rect x="395" y="108" width="30" height="5" rx="2.5" fill="#1a1a1a" />
+          <rect x="400" y="290" width="20" height="4" rx="2" fill="#27272A" />
+        </g>
+      </svg>
     </div>
     <p class="hero-label">Software studio</p>
     <h1>
@@ -39,6 +90,13 @@ import Logo from '../components/Logo.astro';
       <a href="#servicios" class="btn-ghost">Ver servicios <span>&rarr;</span></a>
     </div>
   </section>
+
+  <!-- Zigzag Divider -->
+  <div class="section-divider">
+    <svg viewBox="0 -2 100 14" preserveAspectRatio="none">
+      <path class="divider-line" d="M0,5 L35,5 L42,0 L50,5 L58,0 L65,5 L100,5" />
+    </svg>
+  </div>
 
   <!-- Services Section -->
   <section class="services" id="servicios">
@@ -115,11 +173,52 @@ import Logo from '../components/Logo.astro';
     </div>
   </section>
 
+  <!-- Projects Section -->
+  <section class="projects" id="proyectos">
+    <div class="container">
+      <div class="projects-header">
+        <p class="section-number">02 — PROYECTOS</p>
+        <h2 class="section-title">Lo que hemos construido</h2>
+        <p class="section-description">
+          Algunos proyectos que demuestran lo que podemos hacer juntos.
+        </p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card animate-on-scroll">
+          <div class="project-preview">
+            <div class="browser-frame">
+              <div class="browser-bar">
+                <div class="browser-dot"></div>
+                <div class="browser-dot"></div>
+                <div class="browser-dot"></div>
+                <span class="browser-url">midimed.tech</span>
+              </div>
+              <div class="browser-content">
+                <img src="https://midimed.tech/screenshot.png" alt="MidiMed Preview" loading="lazy" />
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <p class="project-tag">Healthcare Tech</p>
+            <h3>MidiMed</h3>
+            <p>Plataforma de gestión médica que conecta pacientes con profesionales de salud. Sistema completo con agenda, historial y telemedicina.</p>
+            <a href="https://midimed.tech" class="project-link" target="_blank" rel="noopener">
+              Ver proyecto
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Approach Section -->
   <section class="approach" id="enfoque">
     <div class="container">
       <div class="approach-header">
-        <p class="section-number">02 — ENFOQUE</p>
+        <p class="section-number">03 — ENFOQUE</p>
         <h2 class="section-title">Por qué trabajar con nosotros</h2>
         <p class="section-description">
           No somos la agencia más grande. Somos la que entrega.
@@ -146,7 +245,7 @@ import Logo from '../components/Logo.astro';
   <section class="process" id="proceso">
     <div class="container">
       <div class="process-header">
-        <p class="section-number">03 — PROCESO</p>
+        <p class="section-number">04 — PROCESO</p>
         <h2 class="section-title">Cómo trabajamos</h2>
         <p class="section-description">
           Un proceso simple que evita sorpresas.
@@ -182,7 +281,7 @@ import Logo from '../components/Logo.astro';
     <div class="container">
       <div class="contact-content">
         <div>
-          <p class="section-number">04 — CONTACTO</p>
+          <p class="section-number">05 — CONTACTO</p>
           <h2 class="section-title">Hablemos de tu proyecto</h2>
           <p class="section-description">
             Cuéntanos qué tienes en mente. Sin compromiso, sin presentaciones eternas.
@@ -207,6 +306,7 @@ import Logo from '../components/Logo.astro';
       </div>
       <div class="footer-links">
         <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
         <a href="#enfoque">Enfoque</a>
         <a href="#proceso">Proceso</a>
         <a href="#contacto">Contacto</a>
@@ -397,22 +497,33 @@ import Logo from '../components/Logo.astro';
     transform: translateX(4px);
   }
 
-  .floating-shape {
-    width: 8px;
-    height: 8px;
-    background: var(--blue-dark);
-    border-radius: 50%;
-    animation: float 3s ease-in-out infinite;
+  /* Hero Graphics - Mobile Base (hidden) */
+  .hero-graphics {
+    display: none;
   }
 
-  .floating-shape:nth-child(2) {
-    animation-delay: 0.5s;
-    background: var(--yellow-dark);
+  /* Zigzag Divider */
+  .section-divider {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    overflow: visible;
+    line-height: 0;
+    background: var(--white);
   }
 
-  .floating-shape:nth-child(3) {
-    animation-delay: 1s;
-    background: var(--gray-400);
+  .section-divider svg {
+    width: 100%;
+    height: 60px;
+    display: block;
+    overflow: visible;
+  }
+
+  .section-divider .divider-line {
+    stroke: var(--yellow);
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
   }
 
   /* Section Styles - Mobile Base */
@@ -516,6 +627,140 @@ import Logo from '../components/Logo.astro';
     color: var(--gray-600);
     font-size: 0.9rem;
     line-height: 1.7;
+  }
+
+  /* Projects Section - Mobile Base */
+  .projects {
+    background: var(--white);
+  }
+
+  .projects-header {
+    margin-bottom: 3rem;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .project-card {
+    border-radius: 12px;
+    overflow: hidden;
+    background: var(--gray-100);
+    border: 1px solid var(--gray-200);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  }
+
+  .project-preview {
+    aspect-ratio: 16/10;
+    background: var(--gray-200);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .browser-frame {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .browser-bar {
+    height: 28px;
+    background: var(--gray-800);
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .browser-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  .browser-dot:nth-child(1) { background: #ff5f57; }
+  .browser-dot:nth-child(2) { background: #ffbd2e; }
+  .browser-dot:nth-child(3) { background: #28ca42; }
+
+  .browser-url {
+    flex: 1;
+    margin-left: 8px;
+    background: var(--gray-600);
+    border-radius: 4px;
+    padding: 3px 10px;
+    font-size: 10px;
+    color: var(--gray-400);
+    font-family: monospace;
+  }
+
+  .browser-content {
+    flex: 1;
+    background: var(--white);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .browser-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .project-info {
+    padding: 1.5rem;
+  }
+
+  .project-tag {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--blue-dark);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-info h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-info p {
+    color: var(--gray-600);
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+
+  .project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: gap 0.2s ease;
+  }
+
+  .project-link:hover {
+    gap: 0.75rem;
+  }
+
+  .project-link svg {
+    width: 16px;
+    height: 16px;
   }
 
   /* Approach Section - Mobile Base */
@@ -868,10 +1113,37 @@ import Logo from '../components/Logo.astro';
       max-width: 480px;
     }
 
+    .section-divider svg {
+      height: 80px;
+    }
+
+    .section-divider .divider-line {
+      stroke-width: 8;
+    }
+
     .services-header,
     .approach-header,
-    .process-header {
+    .process-header,
+    .projects-header {
       margin-bottom: 4rem;
+    }
+
+    .project-info {
+      padding: 2rem;
+    }
+
+    .project-tag {
+      font-size: 0.7rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .project-info h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .project-info p {
+      font-size: 0.95rem;
     }
 
     .service-item {
@@ -1022,21 +1294,30 @@ import Logo from '../components/Logo.astro';
       padding: 8rem 2rem 6rem;
     }
 
-    .hero-decoration {
-      display: flex;
+    .hero-graphics {
+      display: block;
       position: absolute;
-      right: 5%;
+      right: -2rem;
       top: 50%;
       transform: translateY(-50%);
-      flex-direction: column;
-      gap: 1.5rem;
-      opacity: 0.6;
+      width: 45%;
+      max-width: 500px;
+    }
+
+    .hero-graphics svg {
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 25px 50px rgba(0,0,0,0.15));
     }
 
     .hero h1 {
       font-size: 4.5rem;
       margin-bottom: 2.5rem;
-      max-width: 850px;
+      max-width: 55%;
+    }
+
+    .section-divider svg {
+      height: 100px;
     }
 
     .hero-description {
@@ -1055,12 +1336,30 @@ import Logo from '../components/Logo.astro';
 
     .services-header,
     .approach-header,
-    .process-header {
+    .process-header,
+    .projects-header {
       margin-bottom: 5rem;
     }
 
     .services-grid {
       grid-template-columns: repeat(3, 1fr);
+    }
+
+    .browser-bar {
+      height: 32px;
+      padding: 0 12px;
+      gap: 8px;
+    }
+
+    .browser-dot {
+      width: 10px;
+      height: 10px;
+    }
+
+    .browser-url {
+      margin-left: 12px;
+      padding: 4px 12px;
+      font-size: 11px;
     }
 
     .service-item {
@@ -1113,7 +1412,12 @@ import Logo from '../components/Logo.astro';
   @media (min-width: 1280px) {
     .hero h1 {
       font-size: 5.5rem;
-      max-width: 900px;
+      max-width: 55%;
+    }
+
+    .hero-graphics {
+      width: 48%;
+      max-width: 550px;
     }
 
     .section-title {
