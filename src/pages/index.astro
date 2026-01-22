@@ -17,7 +17,18 @@ import Logo from '../components/Logo.astro';
         <li><a href="#proceso">Proceso</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
-      <a href="#contacto" class="nav-cta">Hablemos</a>
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <a href="#contacto" class="nav-cta">Hablemos</a>
+      </div>
     </div>
   </nav>
 
@@ -610,6 +621,44 @@ import Logo from '../components/Logo.astro';
     color: var(--black);
   }
 
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .theme-toggle {
+    width: 36px;
+    height: 36px;
+    border: none;
+    background: transparent;
+    color: var(--gray-600);
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.2s, background 0.2s;
+  }
+
+  .theme-toggle:hover {
+    color: var(--black);
+    background: var(--gray-100);
+  }
+
+  .theme-toggle svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .theme-toggle .icon-sun {
+    display: none;
+  }
+
+  .theme-toggle .icon-moon {
+    display: block;
+  }
+
   .nav-cta {
     background: var(--black);
     color: var(--white);
@@ -748,7 +797,10 @@ import Logo from '../components/Logo.astro';
     margin-left: calc(-50vw + 50%);
     overflow: visible;
     line-height: 0;
-    background: var(--white);
+    position: relative;
+    z-index: 10;
+    margin-bottom: -30px;
+    pointer-events: none;
   }
 
   .section-divider svg {
@@ -1390,6 +1442,10 @@ import Logo from '../components/Logo.astro';
       max-width: 480px;
     }
 
+    .section-divider {
+      margin-bottom: -40px;
+    }
+
     .section-divider svg {
       height: 80px;
     }
@@ -1588,9 +1644,10 @@ import Logo from '../components/Logo.astro';
       position: absolute;
       right: -2rem;
       top: 50%;
-      transform: translateY(-50%);
       width: 45%;
       max-width: 500px;
+      opacity: 0;
+      animation: heroGraphicsIn 0.8s ease 0.6s both;
     }
 
     .hero-graphics svg {
@@ -1603,6 +1660,10 @@ import Logo from '../components/Logo.astro';
       font-size: 4.5rem;
       margin-bottom: 2.5rem;
       max-width: 55%;
+    }
+
+    .section-divider {
+      margin-bottom: -50px;
     }
 
     .section-divider svg {
@@ -1712,5 +1773,119 @@ import Logo from '../components/Logo.astro';
     .section-title {
       font-size: 3.5rem;
     }
+  }
+
+  /* =============================================
+     DARK MODE OVERRIDES
+     ============================================= */
+  :global([data-theme="dark"]) nav {
+    background: rgba(23, 23, 23, 0.85);
+    border-bottom-color: var(--gray-200);
+  }
+
+  :global([data-theme="dark"]) .hero-graphics svg rect[fill="#FAFAFA"],
+  :global([data-theme="dark"]) .hero-graphics svg rect[fill="#F4F4F5"] {
+    fill: #262626;
+  }
+
+  :global([data-theme="dark"]) .hero-graphics svg rect[fill="#E4E4E7"] {
+    fill: #404040;
+  }
+
+  :global([data-theme="dark"]) .hero-graphics svg rect[fill="#27272A"] {
+    fill: #1C1C1C;
+  }
+
+  :global([data-theme="dark"]) .hero-graphics svg rect[fill="#1a1a1a"] {
+    fill: #0f0f0f;
+  }
+
+  :global([data-theme="dark"]) .hero-graphics svg ellipse[fill="#1a1a1a"] {
+    fill: #0f0f0f;
+  }
+
+  :global([data-theme="dark"]) .hero-graphics svg rect[fill="#A1A1AA"] {
+    fill: #525252;
+  }
+
+  :global([data-theme="dark"]) .browser-content {
+    background: #262626;
+  }
+
+  :global([data-theme="dark"]) .browser-content--private {
+    background: #1C1C1C;
+  }
+
+  :global([data-theme="dark"]) .private-mockup rect[fill="#FAFAFA"],
+  :global([data-theme="dark"]) .private-mockup rect[fill="#F4F4F5"] {
+    fill: #262626;
+  }
+
+  :global([data-theme="dark"]) .private-mockup rect[fill="#E4E4E7"] {
+    fill: #404040;
+  }
+
+  :global([data-theme="dark"]) .private-badge {
+    background: rgba(245, 245, 244, 0.9);
+    color: #171717;
+  }
+
+  :global([data-theme="dark"]) .browser-bar {
+    background: #0f0f0f;
+  }
+
+  :global([data-theme="dark"]) .browser-url {
+    background: #262626;
+    color: #737373;
+  }
+
+  :global([data-theme="dark"]) .project-card {
+    background: #1C1C1C;
+    border-color: #262626;
+  }
+
+  :global([data-theme="dark"]) .project-card:hover {
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  }
+
+  :global([data-theme="dark"]) .service-item {
+    background: #171717;
+  }
+
+  :global([data-theme="dark"]) .service-item:hover {
+    background: #1C1C1C;
+  }
+
+  :global([data-theme="dark"]) .approach {
+    background: #0f0f0f;
+  }
+
+  :global([data-theme="dark"]) .approach-item {
+    border-top-color: #262626;
+  }
+
+  :global([data-theme="dark"]) .contact {
+    background: var(--yellow);
+  }
+
+  :global([data-theme="dark"]) .contact .section-number,
+  :global([data-theme="dark"]) .contact .section-title,
+  :global([data-theme="dark"]) .contact .section-description,
+  :global([data-theme="dark"]) .contact-phone {
+    color: #171717;
+  }
+
+  :global([data-theme="dark"]) .contact-cta {
+    background: #171717;
+    color: #F5F5F4;
+  }
+
+  :global([data-theme="dark"]) footer {
+    background: #0f0f0f;
+  }
+
+  
+  :global([data-theme="dark"]) .process-item::before {
+    background: #1C1C1C;
   }
 </style>
