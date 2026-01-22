@@ -6,31 +6,30 @@ interface Props {
 const { class: className } = Astro.props;
 ---
 
-<svg class:list={["logo", className]} viewBox="0 0 70 28" fill="none">
-  <text x="0" y="18" class="logo-text">quami</text>
-  <path class="logo-bolt" d="M0,24 L18,24 L26,21 L35,24 L44,21 L52,24 L70,24" />
+<svg class:list={["logo", className]} viewBox="0 0 56 28" fill="none">
+  <text
+    x="0"
+    y="18"
+    font-family="system-ui, -apple-system, sans-serif"
+    font-size="20"
+    font-weight="800"
+    letter-spacing="-0.04em"
+    fill="currentColor"
+  >quami</text>
+  <path
+    d="M0,24 L14,24 L21,21 L28,24 L35,21 L42,24 L56,24"
+    stroke="#FDE68A"
+    stroke-width="2.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
 </svg>
 
 <style>
   .logo {
     height: 24px;
     width: auto;
-  }
-
-  .logo-text {
-    font-family: 'Inter', system-ui, sans-serif;
-    font-size: 20px;
-    font-weight: 800;
-    letter-spacing: -0.04em;
-    fill: currentColor;
-  }
-
-  .logo-bolt {
-    stroke: var(--yellow);
-    stroke-width: 2.5;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    fill: none;
   }
 
   @media (min-width: 640px) {
