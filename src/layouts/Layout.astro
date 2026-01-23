@@ -21,6 +21,8 @@ const { title, description = "Somos un estudio de desarrollo enfocado en crear e
     <title>{title}</title>
   </head>
   <body>
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress" class="scroll-progress"></div>
     <slot />
     <script>
       // Theme toggle - runs immediately to prevent flash
@@ -85,6 +87,17 @@ const { title, description = "Somos un estudio de desarrollo enfocado en crear e
 
       // Initialize theme toggle
       initThemeToggle();
+
+      // Scroll progress indicator
+      const scrollProgress = document.getElementById('scroll-progress');
+      if (scrollProgress) {
+        window.addEventListener('scroll', () => {
+          const scrollTop = window.scrollY;
+          const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+          const scrollPercent = (scrollTop / docHeight) * 100;
+          scrollProgress.style.width = scrollPercent + '%';
+        });
+      }
     </script>
   </body>
 </html>
@@ -204,4 +217,16 @@ const { title, description = "Somos un estudio de desarrollo enfocado en crear e
   .delay-2 { transition-delay: 0.2s; }
   .delay-3 { transition-delay: 0.3s; }
   .delay-4 { transition-delay: 0.4s; }
+
+  /* Scroll Progress Indicator */
+  .scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, var(--yellow) 0%, var(--yellow-dark) 100%);
+    z-index: 1001;
+    transition: width 0.1s ease-out;
+  }
 </style>
