@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FAFAFA"/>
+      <stop offset="100%" style="stop-color:#F4F4F5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+
+  <!-- Decorative yellow accent bar -->
+  <rect x="0" y="580" width="1200" height="50" fill="#FDE68A"/>
+
+  <!-- Logo text -->
+  <text
+    x="600"
+    y="280"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+    font-size="120"
+    font-weight="800"
+    text-anchor="middle"
+    fill="#0A0A0A"
+    letter-spacing="-0.04em"
+  >quami</text>
+
+  <!-- Yellow zigzag line under logo -->
+  <path
+    d="M400,320 L450,320 L490,300 L530,320 L570,300 L610,320 L650,300 L690,320 L730,300 L770,320 L800,320"
+    stroke="#FDE68A"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+
+  <!-- Tagline -->
+  <text
+    x="600"
+    y="420"
+    font-family="system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+    font-size="32"
+    font-weight="500"
+    text-anchor="middle"
+    fill="#52525B"
+  >Estudio de desarrollo de software</text>
+
+  <!-- Subtle blue accent dots -->
+  <circle cx="100" cy="100" r="40" fill="#93C5FD" opacity="0.3"/>
+  <circle cx="1100" cy="530" r="60" fill="#93C5FD" opacity="0.2"/>
+</svg>
