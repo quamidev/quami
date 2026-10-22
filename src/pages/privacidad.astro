@@ -1,0 +1,109 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Logo from '../components/Logo.astro';
+
+const updated = '21 de octubre de 2026';
+---
+
+<Layout
+  title="Política de privacidad | Quami"
+  description="Cómo Quami (Multi Inversiones de Desarrollo e Innovación, Sociedad Anónima) trata los datos que recibe por quami.dev."
+>
+  <main class="legal">
+    <a href="/" class="back"><Logo /></a>
+    <h1>Política de privacidad</h1>
+    <p class="updated">Última actualización: {updated}</p>
+
+    <section>
+      <h2>Quiénes somos</h2>
+      <p>
+        Quami es una marca de <strong>Multi Inversiones de Desarrollo e Innovación, Sociedad Anónima</strong>
+        (MIDI), sociedad guatemalteca con NIT 120177366 y domicilio en 8 Avenida 10-69, Residenciales del
+        Norte, Zona 17, Guatemala, Guatemala. Teléfono <a href="tel:+50259447562">+502 5944 7562</a>, correo
+        <a href="mailto:admin@quami.dev">admin@quami.dev</a>.
+      </p>
+      <p>
+        Esta política cubre el sitio quami.dev. Los productos de Quami tienen sus propias políticas; por ejemplo,
+        Sendo y Sendo Connect en <a href="https://sendo.quami.dev/es/privacy">sendo.quami.dev/es/privacy</a>.
+      </p>
+    </section>
+
+    <section>
+      <h2>Qué datos recibimos y para qué</h2>
+      <p>
+        Solo los que nos escribes en el formulario de contacto: nombre, correo electrónico, teléfono (opcional) y
+        tu mensaje. Los usamos únicamente para responderte y, si avanzamos, para preparar una propuesta. No los
+        vendemos ni los usamos para publicidad.
+      </p>
+      <p>
+        El formulario se envía a través de Web3Forms, que nos reenvía el mensaje por correo. El sitio está alojado
+        en Vercel, que registra datos técnicos de las visitas (como la dirección IP) durante un tiempo corto para
+        operar y proteger el servicio. Este sitio no usa cookies de publicidad ni herramientas de seguimiento.
+      </p>
+    </section>
+
+    <section>
+      <h2>Cuánto tiempo los guardamos</h2>
+      <p>
+        Conservamos los mensajes de contacto mientras dure la conversación o la relación comercial, y como máximo
+        dos años después del último contacto, salvo que la ley nos pida guardarlos más tiempo.
+      </p>
+    </section>
+
+    <section>
+      <h2>Tus derechos</h2>
+      <p>
+        Puedes pedirnos acceso a tus datos, corregirlos o eliminarlos escribiendo a
+        <a href="mailto:admin@quami.dev">admin@quami.dev</a> desde el correo con el que nos contactaste.
+        Respondemos en un plazo máximo de 30 días.
+      </p>
+    </section>
+
+    <section>
+      <h2>Cambios</h2>
+      <p>Si cambiamos esta política, actualizaremos la fecha de arriba.</p>
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .legal {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 1.25rem 5rem;
+    line-height: 1.65;
+  }
+
+  .back {
+    display: inline-block;
+    color: var(--black);
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    letter-spacing: -0.02em;
+    margin: 0 0 0.25rem;
+  }
+
+  .updated {
+    color: var(--gray-500);
+    font-size: 0.875rem;
+    margin: 0 0 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.125rem;
+    margin: 2rem 0 0.5rem;
+  }
+
+  p {
+    color: var(--gray-600);
+    margin: 0 0 1rem;
+  }
+
+  a {
+    color: var(--black);
+    text-underline-offset: 2px;
+  }
+</style>

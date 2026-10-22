@@ -838,8 +838,16 @@ import Logo from '../components/Logo.astro';
       </div>
     </div>
     <div class="footer-bottom">
-      <span>2025 Quami. Propiedad de MIDI. SA</span>
-      <span>Guatemala</span>
+      <span>
+        © 2026 Quami es una marca de Multi Inversiones de Desarrollo e Innovación, Sociedad Anónima
+        (MIDI). NIT 120177366.
+      </span>
+      <span>
+        8 Avenida 10-69, Residenciales del Norte, Zona 17, Guatemala, Guatemala ·
+        <a href="tel:+50259447562">+502 5944 7562</a> ·
+        <a href="mailto:admin@quami.dev">admin@quami.dev</a> ·
+        <a href="/privacidad">Política de privacidad</a>
+      </span>
     </div>
   </footer>
 </Layout>
@@ -1871,6 +1879,16 @@ import Logo from '../components/Logo.astro';
     gap: 0.5rem;
     font-size: 0.75rem;
     color: var(--gray-500);
+  }
+
+  .footer-bottom a {
+    color: var(--gray-400);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .footer-bottom a:hover {
+    color: var(--white);
   }
 
   /* =============================================
