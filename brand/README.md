@@ -14,7 +14,7 @@ Picos a 45°, el izquierdo más alto que el derecho.
 | `logo/quami-icon.svg` | Ícono: volcanes queso sobre cuadro tinta (redes, GitHub, npm, avatar) |
 | `logo/quami-icon-small.svg` | Ícono con trazo más grueso, solo para 16–32 px (favicon) |
 | `logo/quami-symbol.svg` | Volcanes solos en tinta, sin cuadro |
-| `png/` | PNG 1200 px de las versiones principales |
+| `png/` | PNG 1200 px de las versiones principales; `quami-og-image.png` (1200×630) para compartir links |
 | `web/` | favicon.ico/svg, apple-touch-icon, íconos PWA, `site.webmanifest`, `head-snippet.html` |
 
 En el sitio, `src/components/Logo.astro` usa `currentColor` para el texto, así que cambia solo con el modo claro/oscuro.
@@ -47,5 +47,4 @@ El amarillo sobre blanco tiene poco contraste: **nunca** se usa para texto, solo
 
 ## Pendiente
 
-- `public/og-image.svg/png` todavía usa el logo anterior.
 - Búsqueda de marca registrada profesional antes de registrarlo.
