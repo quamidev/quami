@@ -1,16 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#fff"/>
-  <text x="16" y="19"
-        font-family="system-ui, -apple-system, sans-serif"
-        font-size="10"
-        font-weight="800"
-        text-anchor="middle"
-        fill="#1a1a1a"
-        letter-spacing="-0.03em">quami</text>
-  <path d="M5,24 L10,24 L13,22 L16,24 L19,22 L22,24 L27,24"
-        fill="none"
-        stroke="#F5D547"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256"><title>Quami</title><g transform="translate(5.12 5.12) scale(0.96)"><rect width="256" height="256" rx="56" fill="#1A1A1A"/><path d="M41.6 150.8H53.6L103.2 101.2L143.5 141.5L168.3 116.7L202.4 150.8H214.4" fill="none" stroke="#F4C430" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
